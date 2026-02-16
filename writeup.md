@@ -1,10 +1,12 @@
 1. Installation & Dependencies
 Clone the repository and install the required Python libraries. (Source : https://github.com/3ndG4me/AutoBlue-MS17-010)
 
-```cd /opt```
-```sudo git clone https://github.com/3ndG4me/AutoBlue-MS17-010.git```
-```cd AutoBlue-MS17-010```
-```sudo pip install -r requirements.txt --break-system-packages```
+```
+cd /opt
+sudo git clone https://github.com/3ndG4me/AutoBlue-MS17-010.git
+cd AutoBlue-MS17-010
+sudo pip install -r requirements.txt --break-system-packages
+```
 
 Note: The --break-system-packages flag is required on newer Kali Linux versions to bypass PEP 668 restrictions
 
